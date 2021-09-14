@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  background-color: #e43a89;
+  /* display: flex; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --value: 40%;
+  --back-color: #e43a89;
+}
+.mytxt {
+  color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.btn {
+  border: none;
   align-items: center;
+  box-shadow: 5px 5px 10px #c23174, -5px -5px 10px #ff439e;
+  /* box-shadow: 8px 8px 12px 0 rgba(0, 0, 0, 0.25), */
+  /*   -6px -6px 10px 0 rgba(255, 255, 255, 0.3); */
+  border-radius: 15px;
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0.4rem;
+  /* default for <button>, but useful for <a> */
+  /* display: inline-block; */
+  text-align: center;
+  text-decoration: none;
+  outline: solid transparent;
+  cursor: pointer;
+  font: inherit;
+  height: 80px;
+  width: 80px;
+  font-size: 2.43rem;
+  color: #2f3436;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:active {
+  transform: translateY(1px);
+  filter: saturate(120%);
+  border-radius: 15px;
+  background: linear-gradient(225deg, #cd347b, #f43e93);
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  align-items: center;
+  /* background-color: #afd275; */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  /* position: unset; */
 }
+.buttons {
+  /* width: 28rem; */
+  margin-left: 2.5rem;
+}
+.result {
+  height: 90px;
+  /* width: 28rem; */
+  text-align: center;
+  border-radius: 10px;
+  background: #e43a89;
+  box-shadow: inset -5px 5px 17px #cf357d, inset 5px -5px 17px #f93f95;
+  display: flex;
+  margin: 20px;
+  justify-content: flex-end;
+  /* padding: 10px; */
+}
+
+.result-txt {
+  /* color: red; */
+  padding: 5px;
+  text-align: center;
+  display: flex-end;
+  font-size: 2.3rem;
+}
+
+/* .calculator-body { */
+/*   display: table; */
+/* } */
